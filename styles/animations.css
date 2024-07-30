@@ -15,33 +15,33 @@
 
 @keyframes theme-menu-pointer {
 
-    from {
-        left: -20px;
-    }
+  from {
+    left: -20px;
+  }
 
-    to {
-        left: -16px;
-    }
+  to {
+    left: -16px;
+  }
 }
 
 @keyframes heart-scale {
-    
-    from {
-        transform: scale(1);
-    }
 
-    to {
-        transform: scale(1.5);
-    }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes sparks-come-out {
 
-    from {
-        fill: none;
-    }
+  from {
+    fill: none;
+  }
 
-    to {
-        fill: var(--like-icon-active)
-    }
+  to {
+    fill: var(--like-icon-active);
+  }
 }

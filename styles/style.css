@@ -174,20 +174,19 @@
   mix-blend-mode: hard-light;
   opacity: 0.5;
   text-shadow:
-  -1px 0 var(--bg-color), 
-  0 1px var(--bg-color),
-  1px 0 var(--bg-color), 
-  0 -1px var(--bg-color);
+    -1px 0 var(--bg-color),
+    0 1px var(--bg-color),
+    1px 0 var(--bg-color),
+    0 -1px var(--bg-color);
 }
 
-
-@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
+@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
 
   .card__image-decorating-label {
-    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-stroke: 1px #fff;
     text-shadow: none;
   }
-} 
+}
 
 .card__image {
   display: block;
@@ -222,11 +221,11 @@
 }
 
 .sprint-3-2 {
-  filter: hue-rotate(30deg)
+  filter: hue-rotate(30deg);
 }
 
 .sprint-4 {
-  filter: invert(). hue-rotate(180deg), saturate(120%);
+  filter: invert(), hue-rotate(180deg), saturate(120%);
 }
 
 .card__image-source-link {
@@ -291,7 +290,6 @@
 .button:hover::after {
   transform: translateX(0%);
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .button-text {
@@ -346,7 +344,6 @@
   fill: var(--main-color);
   transition: fill 0.1s linear;
 }
-
 
 .like-icon.is-liked .core {
   fill: var(--like-icon-active);
