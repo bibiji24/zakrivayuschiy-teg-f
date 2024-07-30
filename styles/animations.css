@@ -13,6 +13,83 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.theme-menu__button:disabled::after {
+  content: '▶';
+  position: absolute;
+  left: -20px;
+  list-style-position: inside;
+  font-size: 14px;
+  line-height: 14px;
+  opacity: 0.6;
+  animation: theme-menu-pointer 0.5s ease-in-out infinite;
+}
+
+.like-icon {
+  inline-size: 100%;
+}
+
+.heart {
+  transform-origin: 50% 50%;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  fill: var(--main-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--like-icon-active);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--like-icon-active);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--like-icon-active);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-come-out 0.3s 0.3s ease-in;
+}
+
+.card__icon-button:hover .like-icon:not(.is-liked) .core {
+  fill: var(--main-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .like-icon:not(.is-liked) .main-body {
+  fill: var(--main-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.card__icon-button:active .like-icon:not(.is-liked) .core {
+  fill: var(--like-icon-active);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .like-icon:not(.is-liked) .main-body {
+  fill: var(--like-icon-active);
+  transition: fill 0.3s 0.05s linear;
+}
+
 @keyframes theme-menu-pointer {
 
   from {
