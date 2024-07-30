@@ -172,6 +172,7 @@
 @supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
 
   .card__image-decorating-label {
+    text-stroke: 1px #fff;
     -webkit-text-stroke: 1px #fff;
     text-shadow: none;
   }
