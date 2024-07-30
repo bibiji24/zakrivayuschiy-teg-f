@@ -203,11 +203,11 @@
 }
 
 .sprint-2-2 {
-  filter: contrast(60%), brightness(60%);
+  filter: contrast(70%) brightness(70%);
 }
 
 .sprint-3-1 {
-  filter: blur(3px);
+  filter: blur(2px) contrast(120%);
 }
 
 .sprint-3-2 {
@@ -215,16 +215,7 @@
 }
 
 .sprint-4 {
-  filter: invert(), hue-rotate(180deg), saturate(120%);
-}
-
-.card__image-source-link {
-  position: absolute;
-  bottom: -14px;
-  right: 0;
-  font-family: var(--accent-font-family);
-  font-size: 10px;
-  opacity: 0.5;
+  filter: hue-rotate(50deg) brightness(70%);
 }
 
 .card__paragraph {
