@@ -26,6 +26,7 @@
 
 .like-icon {
   inline-size: 100%;
+  transform: scale(1.25) translateY(3px);
 }
 
 .heart {
@@ -115,10 +116,12 @@
 @keyframes sparks-come-out {
 
   from {
+    display: none;
     fill: none;
   }
 
   to {
+    display: block;
     fill: var(--like-icon-active);
   }
 }
